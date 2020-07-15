@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%); */
+
+}
+@font-face {
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local('Montserrat Alternates Medium'), local('MontserratAlternates-Medium'), url(https://fonts.gstatic.com/s/montserratalternates/v11/mFTiWacfw6zH4dthXcyms1lPpC8I_b0juU0xGITFB7xG.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+li, a, button, form{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:  #E1EBEE;
+    text-decoration: none;
+}
+
+header, article{
+    background-color: #0C2340;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30rem, 10%;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: 55rem;
+}
+.logo img{
+    max-height: 6rem;
+    max-width: 6rem;
+}
+.navlinks{
+    list-style: none;
+}
+
+.navlinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navlinks li a{
+    transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover{
+    color: #0088a9;
+}
+
+button{
+    margin: 2rem 2rem;
+    padding: 9px 25px;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    color: rgba(0, 0, 0, 0.795);
+}
+.bottom{
+    background-color: #333;
+    padding: 0.9375rem 1.875rem;
+}
+
+.box{
+    margin-top: 3rem;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background: #191919; */
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 80%);
+    text-align: center;
+    border-radius: 30px;
+    height: 30rem;
+}
+
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.box input[type = "email"],.box input[type = "password"],.box input[name = "name"]{
+    border:0;
+    background: none;
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type = "email"]:focus,.box input[type = "password"]:focus, .box input[name = "name"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+.box input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type = "submit"]:hover{
+    background: #2ecc71;
+}
+footer{
+    background-color: #333;
+    padding: 0.9375rem 1.875rem;
+}
+.ft-list{
+    /* margin-left: 25rem; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+}
+.ft-list li{
+    margin: 0.125rem 10rem;
+    white-space: nowrap;
+    list-style: none;
+    text-align: center;
+
+}

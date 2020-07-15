@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Bot Login</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/botlogin.css" />
+</head>
+<body>
+<header>
+
+    <div class="logo">
+        <!-- <img src="../ChatBot_HTML/resources/images/ChatBotLogo2.jpg" alt="ChatBot logo"> -->
+        <a href="/"><img src="/images/ChatBotLogo2.jpg" alt="ChatBot logo"></a>
+    </div>
+    <nav class="navbar">
+        <ul class="navlinks">
+            <li><a href="/">Home</a></li>
+            <li><a href="#">About</a></li>
+            <!-- <li><a href="#">ChatBot</a></li> -->
+        </ul>
+    </nav>
+    <!-- <a class="login" href="#"><button>Login</button></a> -->
+    <a class="signup" href="/signup"><button>Sign-up</button></a>
+</header>
+<article class="form">
+
+    <form class="box"  method="POST" onsubmit="login(event)">
+        <h1>Login</h1>
+        <br>
+<!--        <h2 class="error">    <% if (messages.error) { %>-->
+<!--            <%= messages.error %>-->
+<!--            <% } %></h2>-->
+        <br>
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" placeholder="xyz@mail.com" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        <input type="submit" name="submit" value="Login">
+    </form>
+</article>
+<footer class="bottom">
+    <ul class="ft-list">
+        <li><a href="#">Terms of usage</a></li>
+        <li>&copy; 2020 Virtusa Interns(Techno India Group)</li>
+    </ul>
+</footer>
+<script src="/api/axios.js"></script>
+</body>
+</html>
