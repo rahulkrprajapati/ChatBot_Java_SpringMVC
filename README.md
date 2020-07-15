@@ -1,7 +1,4 @@
 # [ChatBot Using Java SpringMVC](https://github.com/null-buster/ChatBot_Java_SpringMVC)
-
-This repository contains a ChatBot application we delevloped as part of the internship at Virtusa to aid in automobile purchase.
-
 Welcome to our project **ChatBot Using Java SpringMVC** !!
 
 This application was developed with the intent to design a ChatBot that could aid in customer purchase. The customer in order to interact with the ChatBot would have to login to the application using the credentials used during sign up to access the chatbot window. This would not be feasible in a real world application but was done to fulfill out internship criteria.
@@ -35,10 +32,14 @@ The UI is served using the SpringMVC's `model > view > controller` approach usin
 
 You can find the UI pages at the path `ChatBot_Java_SpringMVC/src/main/resources/templates/` and the required static files at `ChatBot_Java_SpringMVC/src/main/resources/static/`
 
-## Database:
+## Chatbot Logic & Database:
+
+![ChatBot in action](https://github.com/null-buster/ChatBot_Java_SpringMVC/blob/master/Documentation/Images/ChatBot_In_Action.jpeg)
 
 Our application uses a MongoDB cloud database the `URI` of which can be found in the file named `application.properties` at the path `
-ChatBot_Java_SpringMVC/src/main/resources/application.properties `.
+ChatBot_Java_SpringMVC/src/main/resources/application.properties `. The questions for the chatbot are fetched from the Database and are stored in a **linear** fashion in the order that the chatbot is required to fetch. The schematic of the conversational dialogue flow can be viewed from [here](https://github.com/null-buster/ChatBot_Java_SpringMVC/blob/master/Documentation/Chatbot_Dialogue_Flowchart.pdf). A future implementation could be to incorporate more thinking into the chatbot's business layer using **nested questions** and allowing if to fetch questions from the `API` using some business logic necessary to the platform where it's deployed.
+
+After each interaction the Chatbot is able to store the interaction using a timestamp to our cloud database and can be accessed by the admin using the [admin credentials ](https://github.com/null-buster/ChatBot_Java_SpringMVC/blob/master/Documentation/Images/Admin_credentials.jpeg)which are decided by the attribute role in our database. You can use the credentials `username- admin@gmail.com` and `password- password` to view the [admin page](https://github.com/null-buster/ChatBot_Java_SpringMVC/blob/master/Documentation/Images/Admin%20Page.jpeg) yourself.
 
 ## Backend:
 The backend of the application namely the `controller, model, repository, services` of various elements are stored in separate directories at the path `ChatBot_Java_SpringMVC/src/main/java/com/example/demo/`.
