@@ -1,7 +1,7 @@
 # [ChatBot Using Java SpringMVC](https://github.com/null-buster/ChatBot_Java_SpringMVC)
 Welcome to our project **ChatBot Using Java SpringMVC** !!
 
-This application was developed with the intent to design a ChatBot that could aid in customer purchase. The customer in order to interact with the ChatBot would have to login to the application using the credentials used during sign up to access the chatbot window. This would not be feasible in a real world application but was done to fulfill out internship criteria.
+This application was developed with the intent to design a ChatBot that could aid in customer purchase. The customer in order to interact with the ChatBot would have to login to the application using the credentials used during sign up to access the chatbot window. This would not be feasible in a real world application but was done to fulfill our internship criteria.
 
 ![Home Page](https://github.com/null-buster/ChatBot_Java_SpringMVC/raw/master/Documentation/Images/Home_Page.jpeg)
 
